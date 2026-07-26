@@ -18,7 +18,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public float snapDistance = 100f;
 
     [Header("Positioning")]
-    [Tooltip("Offset from the center of the slot when dropped")]
     public Vector2 slotOffset = new Vector2(-150f, -30f);
 
     [Header("Animation Settings")]
@@ -45,13 +44,30 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         originalParent = transform.parent;
         OriginalScale = rectTransform.localScale;
         originalAnchoredPosition = rectTransform.anchoredPosition;
+
+        // ✅ NEW: Automatically find the Canvas if it's not assigned in the Inspector
+        if (canvas == null)
+        {
+            // First, try to find it in the parent hierarchy (Scroll View -> Canvas)
+            canvas = GetComponentInParent<Canvas>();
+            
+            // Fallback: if not found in parents, find any Canvas in the scene
+            if (canvas == null)
+            {
+                canvas = FindObjectOfType<Canvas>();
+            }
+
+            if (canvas == null)
+            {
+                Debug.LogError("No Canvas found in the scene! Drag & drop will not work.", this);
+            }
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         isDragging = true;
         
-        // Check the CURRENT parent to clear the slot properly
         if (transform.parent != null)
         {
             ItemSlot currentSlot = transform.parent.GetComponent<ItemSlot>();
@@ -61,6 +77,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             }
         }
 
+        // Now this will safely use the auto-found canvas!
         transform.SetParent(canvas.transform);
         rectTransform.localScale = OriginalScale * 1.1f; 
         canvasGroup.alpha = 0.7f;
@@ -106,16 +123,12 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         transform.SetParent(slot.transform);
         rectTransform.anchoredPosition = slotOffset; 
-        
-        // Set scale to 1,1. The parent ItemSlot handles all zoom scaling automatically!
         rectTransform.localScale = Vector2.one;
         
         IsValid = slot.CountryName == CountryName;
         imageComponent.sprite = FlagImage;
 
         slot.OnFlagDropped();
-
-        // Squish around Vector2.one
         StartCoroutine(SquishAnimation(Vector2.one));
     }
 
@@ -148,7 +161,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             yield return null;
         }
 
-        // Ensure exact target scale at end
         rectTransform.localScale = targetScale;
     }
 

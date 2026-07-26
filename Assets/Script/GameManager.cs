@@ -1,10 +1,8 @@
-using NUnit.Framework;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,35 +19,42 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Vector2 hotspot = Vector2.zero;
     [SerializeField] private CursorMode cursorMode = CursorMode.Auto;
 
-
     void Start()
     {
-        Cursor.SetCursor(cursorSprite.texture, hotspot, CursorMode.ForceSoftware);
-        GameObject[] foundFlags = GameObject.FindGameObjectsWithTag("Flag");
-        var dragDrops = new List<DragDrop>();
-
-        foreach (var item in foundFlags)
+        if (cursorSprite != null)
         {
-            // GetComponentInChildren<T>() returns a single component (or null)
-            var dd = item.GetComponentInChildren<DragDrop>();
-            if (dd != null)
-                dragDrops.Add(dd);
+            Cursor.SetCursor(cursorSprite.texture, hotspot, CursorMode.ForceSoftware);
         }
-
-        // store into the public array field if you need an array
-        FlagList = dragDrops.ToArray();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Empty
+    }
 
+     public void Reload()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void SubmitAnswers()
     {
+        // ✅ FOOLPROOF: Finds ALL DragDrop scripts in the scene, 
+        // regardless of whether they are in the scroll view, being dragged, or in a map slot!
+        DragDrop[] allDragDrops = FindObjectsOfType<DragDrop>();
+
+        if (allDragDrops.Length == 0)
+        {
+            Debug.LogWarning("No DragDrop scripts found in the scene!");
+            return;
+        }
+
+        // Set our list to whatever was found
+        FlagList = allDragDrops;
+
         validFlags = new List<DragDrop>();
         bool didWeWin = true;
+
         foreach (var item in FlagList)
         {
             if (item.IsValid != true)
@@ -61,15 +66,16 @@ public class GameManager : MonoBehaviour
                 validFlags.Add(item);
             }
         }
+
         if (didWeWin)
         {
             Win.gameObject.SetActive(true);
-
         }
         else
         {
             Lose.gameObject.SetActive(true);
         }
+
         foreach (var item in FlagList)
         {
             if (item.IsValid)
@@ -79,11 +85,9 @@ public class GameManager : MonoBehaviour
                 newGameObject.GetComponent<TextMeshProUGUI>().text = item.CountryName;
 
                 RectTransform rt = newGameObject.GetComponent<RectTransform>();
-
                 rt.anchorMin = new Vector2(0.5f, 0.5f);
                 rt.anchorMax = new Vector2(0.5f, 0.5f);
                 rt.pivot = new Vector2(0.5f, 0.5f);
-
                 rt.anchoredPosition = Vector2.zero;
                 rt.localRotation = Quaternion.identity;
                 rt.localScale = Vector3.one;
@@ -94,20 +98,19 @@ public class GameManager : MonoBehaviour
                 GameObject newGameObject = Instantiate(TemplateCountryWrongTxtGameObject);
                 newGameObject.transform.SetParent(TemplateCountryWrongTxtGameObject.transform.parent);
                 newGameObject.GetComponent<TextMeshProUGUI>().text = item.CountryName;
-                
-                    RectTransform rt = newGameObject.GetComponent<RectTransform>();
 
+                RectTransform rt = newGameObject.GetComponent<RectTransform>();
                 rt.anchorMin = new Vector2(0.5f, 0.5f);
                 rt.anchorMax = new Vector2(0.5f, 0.5f);
                 rt.pivot = new Vector2(0.5f, 0.5f);
-
                 rt.anchoredPosition = Vector2.zero;
                 rt.localRotation = Quaternion.identity;
                 rt.localScale = Vector3.one;
                 rt.sizeDelta = Vector2.zero;
             }
         }
-        TemplateCountryRightTxtGameObject.SetActive(false); 
+
+        TemplateCountryRightTxtGameObject.SetActive(false);
         TemplateCountryWrongTxtGameObject.SetActive(false);
         FlagScore.text = validFlags.Count + "/" + FlagList.Length;
     }
