@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 8402473}
   - component: {fileID: 8402472}
   m_Layer: 5
-  m_Name: Macedonia
+  m_Name: "Maced\xF3nia do Norte"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185.1, y: -363.52}
+  m_AnchoredPosition: {x: 186.77, y: -358.06}
   m_SizeDelta: {x: 21.87, y: 18.826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8402472
@@ -169,15 +169,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Macedonia
+  CountryName: "Maced\xF3nia do Norte"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.2, y: 0.2}
+  maxLocalScale: {x: 0.2, y: 0.2}
+  minLocalScale: {x: 0.1, y: 0.1}
   shrinkIntensity: 2
 --- !u!114 &8402473
 MonoBehaviour:
@@ -316,6 +316,7 @@ RectTransform:
   - {fileID: 1967964442}
   - {fileID: 950666351}
   - {fileID: 151216307}
+  - {fileID: 307218491}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -323,6 +324,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &67437556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67437557}
+  - component: {fileID: 67437559}
+  - component: {fileID: 67437558}
+  m_Layer: 5
+  m_Name: Pausa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &67437557
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67437556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 307218491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015259, y: 1268}
+  m_SizeDelta: {x: 2797.887, y: 720.81}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &67437558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67437556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 963474339240849142, guid: 48a2c83396319f847b960d0d93977d4a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &67437559
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67437556}
+  m_CullTransparentMesh: 1
 --- !u!1 &87474557
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +502,7 @@ GameObject:
   - component: {fileID: 120098421}
   - component: {fileID: 120098420}
   m_Layer: 5
-  m_Name: Armenia
+  m_Name: "Arm\xE9nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -463,15 +539,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Armenia
+  CountryName: "Arm\xE9nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.2, y: 0.2}
+  maxLocalScale: {x: 0.2, y: 0.2}
+  minLocalScale: {x: 0.1, y: 0.1}
   shrinkIntensity: 2
 --- !u!114 &120098421
 MonoBehaviour:
@@ -523,7 +599,7 @@ GameObject:
   - component: {fileID: 151216309}
   - component: {fileID: 151216308}
   m_Layer: 0
-  m_Name: Lose
+  m_Name: ScorePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,8 +625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 202.90002, y: -0.00012207031}
-  m_SizeDelta: {x: -863.9, y: -498.551}
+  m_AnchoredPosition: {x: 129.13, y: -10.096924}
+  m_SizeDelta: {x: -716.36, y: -281.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &151216308
 MonoBehaviour:
@@ -565,15 +641,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.7882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -296074654295026396, guid: b3086e1c1165e8c4f80135c0a24edd4a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -603,7 +679,7 @@ GameObject:
   - component: {fileID: 157152347}
   - component: {fileID: 157152346}
   m_Layer: 5
-  m_Name: Azerbaijan
+  m_Name: "Azerbaij\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,7 +701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 818.9, y: -256.3}
+  m_AnchoredPosition: {x: 833.1, y: -247.64}
   m_SizeDelta: {x: 31.785, y: 29.719}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157152346
@@ -640,15 +716,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Azerbaijan
+  CountryName: "Azerbaij\xE3o"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &157152347
 MonoBehaviour:
@@ -699,6 +775,7 @@ GameObject:
   - component: {fileID: 164447856}
   - component: {fileID: 164447855}
   - component: {fileID: 164447857}
+  - component: {fileID: 164447858}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -731,12 +808,15 @@ MonoBehaviour:
   - {fileID: 0}
   Win: {fileID: 0}
   Lose: {fileID: 151216306}
-  TemplateCountryRightTxtGameObject: {fileID: 843679671}
-  TemplateCountryWrongTxtGameObject: {fileID: 668000209}
+  TemplateResultItemGameObject: {fileID: 1945386877}
   FlagScore: {fileID: 1860768687}
-  cursorSprite: {fileID: 21300000, guid: 51cb6ee928f89b64691ef4dfd57c03e9, type: 3}
+  resultButton: {fileID: 950666350}
+  tickSprite: {fileID: 21300000, guid: 8442c2cffaaeea844bbe67a0a160e513, type: 3}
+  crossSprite: {fileID: 8099948557395039752, guid: 9bb2bcb655fa38f41a00027b5224eac9, type: 3}
+  iconWidth: 60
+  iconHeight: 60
+  cursorSprite: {fileID: 2607493506948707624, guid: 5c71fa95211fca34092adfaf1b0e3a51, type: 3}
   hotspot: {x: 0, y: 0}
-  cursorMode: 0
 --- !u!4 &164447856
 Transform:
   m_ObjectHideFlags: 0
@@ -806,6 +886,21 @@ MonoBehaviour:
   - {fileID: 2168167464275038791, guid: 861d7ebdb9695b544a6f44b014a7be90, type: 3}
   - {fileID: 439143013075898148, guid: b918024e379d44a41b9ec3a8bcd1beb7, type: 3}
   maxCount: 10
+--- !u!114 &164447858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164447854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdc96431e7203e4fb68602f7c136c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pausePanel: {fileID: 307218490}
+  backgroundMusic: {fileID: 365980878}
+  gameSceneName: MainMenu
 --- !u!1 &242960182
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,8 +913,9 @@ GameObject:
   - component: {fileID: 242960186}
   - component: {fileID: 242960185}
   - component: {fileID: 242960184}
+  - component: {fileID: 242960187}
   m_Layer: 5
-  m_Name: Sweden
+  m_Name: "Su\xE9cia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.4, y: 103.1}
+  m_AnchoredPosition: {x: -14.481, y: 103}
   m_SizeDelta: {x: 41.369, y: 34.229}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &242960184
@@ -856,14 +952,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Sweden
+  CountryName: "Su\xE9cia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &242960185
@@ -904,6 +1000,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242960182}
   m_CullTransparentMesh: 1
+--- !u!114 &242960187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242960182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  CountryName: "Su\xE9cia"
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
+  hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
+  filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
+  colorLerpSpeed: 10
+  pulseAmount: 0.08
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
+  minLocalScale: {x: 0.3, y: 0.3}
+  shrinkIntensity: 2
 --- !u!1 &258166482
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,8 +1059,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -60, y: -60}
+  m_AnchoredPosition: {x: 3.8379974, y: 5.757019}
+  m_SizeDelta: {x: -52.324, y: -71.514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258166484
 MonoBehaviour:
@@ -987,14 +1105,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4338564409936619454, guid: c3cbd015370c5294385a8d880c234850, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1100,7 +1218,7 @@ GameObject:
   - component: {fileID: 306852208}
   - component: {fileID: 306852207}
   m_Layer: 5
-  m_Name: Turkey
+  m_Name: Turquia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1122,7 +1240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 328.6, y: -351.1}
+  m_AnchoredPosition: {x: 331.8, y: -345.27}
   m_SizeDelta: {x: 21.87, y: 18.826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &306852207
@@ -1137,15 +1255,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Turkey
+  CountryName: Turquia
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &306852208
 MonoBehaviour:
@@ -1185,6 +1303,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306852205}
   m_CullTransparentMesh: 1
+--- !u!1 &307218490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307218491}
+  - component: {fileID: 307218493}
+  - component: {fileID: 307218492}
+  m_Layer: 5
+  m_Name: PauseMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &307218491
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307218490}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.28125003, y: 0.28125003, z: 0.28125003}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 956228415}
+  - {fileID: 960692283}
+  - {fileID: 1115156077}
+  - {fileID: 67437557}
+  m_Father: {fileID: 41927292}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -2.3099365, y: -1.3000488}
+  m_SizeDelta: {x: 4897.84, y: 2757.303}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &307218492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307218490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6974381887887496692, guid: 3619d784fa08e5345892e22b34bbb8f1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &307218493
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307218490}
+  m_CullTransparentMesh: 1
 --- !u!1 &323185980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1395,7 @@ GameObject:
   - component: {fileID: 323185983}
   - component: {fileID: 323185982}
   m_Layer: 5
-  m_Name: Slovakia
+  m_Name: "Eslov\xE1quia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1220,7 +1417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 74.9, y: -228.42}
+  m_AnchoredPosition: {x: 99.8, y: -213.24}
   m_SizeDelta: {x: 23.85, y: 19.816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323185982
@@ -1235,15 +1432,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Slovakia
+  CountryName: "Eslov\xE1quia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &323185983
 MonoBehaviour:
@@ -1283,6 +1480,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323185980}
   m_CullTransparentMesh: 1
+--- !u!1 &365980877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365980879}
+  - component: {fileID: 365980878}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &365980878
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365980877}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: d00a61a8fc4c4334681c5ab157c00388, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &365980879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365980877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 232.66273, y: 152.3959, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409799397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,8 +1666,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -568299405205186641, guid: df0a34697bfceef4c859d02fe7b0c144, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1357,6 +1683,143 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409799397}
+  m_CullTransparentMesh: 1
+--- !u!1 &490372534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 490372535}
+  - component: {fileID: 490372537}
+  - component: {fileID: 490372536}
+  m_Layer: 0
+  m_Name: CountryText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &490372535
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490372534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1945386879}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 173.863, y: -25}
+  m_SizeDelta: {x: 347.726, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &490372536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490372534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4283007925
+  m_fontColor: {r: 0.70980394, g: 0.5137255, b: 0.28627452, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 3
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &490372537
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490372534}
   m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
@@ -1495,42 +1958,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &569496930
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 569496931}
-  m_Layer: 0
-  m_Name: Sliding Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &569496931
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569496930}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1883634134}
-  m_Father: {fileID: 753308940}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,7 +2076,7 @@ GameObject:
   - component: {fileID: 625971006}
   - component: {fileID: 625971005}
   m_Layer: 5
-  m_Name: Hungary
+  m_Name: Hungria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1671,7 +2098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.7, y: -236.48}
+  m_AnchoredPosition: {x: 97.23, y: -254}
   m_SizeDelta: {x: 23.85, y: 19.816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &625971005
@@ -1686,15 +2113,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Slovakia
+  CountryName: Hungria
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &625971006
 MonoBehaviour:
@@ -1747,7 +2174,7 @@ GameObject:
   - component: {fileID: 636842449}
   - component: {fileID: 636842448}
   m_Layer: 5
-  m_Name: Lithuania
+  m_Name: "Litu\xE2nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1784,15 +2211,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Lithuania
+  CountryName: "Litu\xE2nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &636842449
 MonoBehaviour:
@@ -1845,7 +2272,7 @@ GameObject:
   - component: {fileID: 662966738}
   - component: {fileID: 662966737}
   m_Layer: 5
-  m_Name: Austria
+  m_Name: "\xC1ustria"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1867,7 +2294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.925, y: -256.3}
+  m_AnchoredPosition: {x: 7.2, y: -242.69}
   m_SizeDelta: {x: 23.85, y: 19.816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662966737
@@ -1888,9 +2315,9 @@ MonoBehaviour:
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &662966738
 MonoBehaviour:
@@ -1930,143 +2357,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662966735}
   m_CullTransparentMesh: 1
---- !u!1 &668000209
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 668000210}
-  - component: {fileID: 668000212}
-  - component: {fileID: 668000211}
-  m_Layer: 0
-  m_Name: template country wrong
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &668000210
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668000209}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1740873744}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 466.86697, y: -90.33}
-  m_SizeDelta: {x: 903.73395, y: 40.22}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &668000211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668000209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Template Country right
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278198271
-  m_fontColor: {r: 1, g: 0.12189166, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &668000212
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668000209}
-  m_CullTransparentMesh: 1
 --- !u!1 &676602548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,7 +2370,7 @@ GameObject:
   - component: {fileID: 676602551}
   - component: {fileID: 676602550}
   m_Layer: 5
-  m_Name: Italy
+  m_Name: "It\xE1lia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2117,15 +2407,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Italy
+  CountryName: "It\xE1lia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &676602551
 MonoBehaviour:
@@ -2178,7 +2468,7 @@ GameObject:
   - component: {fileID: 684517940}
   - component: {fileID: 684517939}
   m_Layer: 5
-  m_Name: Belarus
+  m_Name: "Bielorr\xFAssia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2200,7 +2490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252.9, y: -77.7}
+  m_AnchoredPosition: {x: 252.9, y: -91.4}
   m_SizeDelta: {x: 37.469, y: 35.033}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &684517939
@@ -2215,14 +2505,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Belarus
+  CountryName: "Bielorr\xFAssia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &684517940
@@ -2276,7 +2566,7 @@ GameObject:
   - component: {fileID: 733549312}
   - component: {fileID: 733549311}
   m_Layer: 5
-  m_Name: Norway
+  m_Name: Noruega
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2313,15 +2603,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Norway
+  CountryName: Noruegas
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &733549312
 MonoBehaviour:
@@ -2374,7 +2664,7 @@ GameObject:
   - component: {fileID: 752824937}
   - component: {fileID: 752824936}
   m_Layer: 5
-  m_Name: Denmark
+  m_Name: Dinamarca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2411,15 +2701,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Denmark
+  CountryName: Dinamarca
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &752824937
 MonoBehaviour:
@@ -2458,132 +2748,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752824934}
-  m_CullTransparentMesh: 1
---- !u!1 &753308939
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 753308940}
-  - component: {fileID: 753308943}
-  - component: {fileID: 753308942}
-  - component: {fileID: 753308941}
-  m_Layer: 0
-  m_Name: Scrollbar Vertical
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &753308940
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753308939}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 569496931}
-  m_Father: {fileID: 1268866917}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: -17}
-  m_Pivot: {x: 1, y: 1}
---- !u!114 &753308941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753308939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Scrollbar
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1883634135}
-  m_HandleRect: {fileID: 1883634134}
-  m_Direction: 2
-  m_Value: 0
-  m_Size: 1
-  m_NumberOfSteps: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &753308942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753308939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &753308943
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753308939}
   m_CullTransparentMesh: 1
 --- !u!1 &787619604
 GameObject:
@@ -2638,7 +2802,7 @@ GameObject:
   - component: {fileID: 789463329}
   - component: {fileID: 789463328}
   m_Layer: 5
-  m_Name: Spain
+  m_Name: Espanha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2675,7 +2839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Spain
+  CountryName: Espanha
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
@@ -2826,7 +2990,7 @@ GameObject:
   - component: {fileID: 840021463}
   - component: {fileID: 840021462}
   m_Layer: 5
-  m_Name: Georgia
+  m_Name: "Ge\xF3rgia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2863,15 +3027,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Georgia
+  CountryName: "Ge\xF3rgia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &840021463
 MonoBehaviour:
@@ -2910,143 +3074,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840021460}
-  m_CullTransparentMesh: 1
---- !u!1 &843679671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 843679672}
-  - component: {fileID: 843679674}
-  - component: {fileID: 843679673}
-  m_Layer: 0
-  m_Name: template country right
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &843679672
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843679671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1740873744}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 466.86697, y: -35.11}
-  m_SizeDelta: {x: 903.73395, y: 40.22}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &843679673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843679671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Template Country right
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278255403
-  m_fontColor: {r: 0.16907978, g: 1, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &843679674
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843679671}
   m_CullTransparentMesh: 1
 --- !u!1 &883553398
 GameObject:
@@ -3163,6 +3190,127 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Mask
   m_ShowMaskGraphic: 1
+--- !u!1 &884862246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884862247}
+  - component: {fileID: 884862250}
+  - component: {fileID: 884862249}
+  - component: {fileID: 884862248}
+  - component: {fileID: 884862251}
+  m_Layer: 5
+  m_Name: Luxemburgo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &884862247
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884862246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305617097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -161.7, y: -204.1}
+  m_SizeDelta: {x: 6.309, y: 5.242}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &884862248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884862246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  CountryName: Luxemburgo
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
+  hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
+  filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
+  colorLerpSpeed: 10
+  pulseAmount: 0.08
+  targetLocalScale: {x: 0.8, y: 0.8}
+  maxLocalScale: {x: 0.8, y: 0.8}
+  minLocalScale: {x: 0.3, y: 0.3}
+  shrinkIntensity: 2
+--- !u!114 &884862249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884862246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 234b8392a121f944583ffbf7786f3e08, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &884862250
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884862246}
+  m_CullTransparentMesh: 1
+--- !u!114 &884862251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884862246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  CountryName: Luxemburgo
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
+  hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
+  filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
+  colorLerpSpeed: 10
+  pulseAmount: 0.08
+  targetLocalScale: {x: 0.2, y: 0.2}
+  maxLocalScale: {x: 0.2, y: 0.2}
+  minLocalScale: {x: 0.1, y: 0.1}
+  shrinkIntensity: 2
 --- !u!1 &900406680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,8 +3346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.275, y: -123.64}
-  m_SizeDelta: {x: 1015.6, y: 247.28}
+  m_AnchoredPosition: {x: 15.476, y: -73.39}
+  m_SizeDelta: {x: 887.26, y: 310.607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &900406682
 MonoBehaviour:
@@ -3214,15 +3362,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4007112321258254791, guid: c3cbd015370c5294385a8d880c234850, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 4431952072545932220, guid: e9ae2277b46f1324b93038f309df88af, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3252,7 +3400,7 @@ GameObject:
   - component: {fileID: 950666353}
   - component: {fileID: 950666352}
   m_Layer: 0
-  m_Name: Button
+  m_Name: NextScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3296,7 +3444,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3306,8 +3454,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 6663573335021605044, guid: 4d6d3e529a32a4141bbac8264745777d, type: 3}
-    m_PressedSprite: {fileID: -6405063604575625559, guid: 4d6d3e529a32a4141bbac8264745777d, type: 3}
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -3353,7 +3501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1462669244351901227, guid: 4d6d3e529a32a4141bbac8264745777d, type: 3}
+  m_Sprite: {fileID: 5960042937630153378, guid: cdd3a4e18fa924b4bb47a44646e4caa5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3371,6 +3519,270 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950666350}
   m_CullTransparentMesh: 1
+--- !u!1 &956228414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 956228415}
+  - component: {fileID: 956228418}
+  - component: {fileID: 956228417}
+  - component: {fileID: 956228416}
+  m_Layer: 5
+  m_Name: Resumir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &956228415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956228414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 307218491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -7.1051, y: 469}
+  m_SizeDelta: {x: 1798.187, y: 527.302}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &956228416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956228414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 956228417}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 164447858}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &956228417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956228414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 930707905013834152, guid: a042cd5b688624c43827a3580ffb995c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &956228418
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956228414}
+  m_CullTransparentMesh: 1
+--- !u!1 &960692282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960692283}
+  - component: {fileID: 960692286}
+  - component: {fileID: 960692285}
+  - component: {fileID: 960692284}
+  m_Layer: 5
+  m_Name: Sair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &960692283
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960692282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 307218491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000024319, y: -123}
+  m_SizeDelta: {x: 1798.187, y: 527.302}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &960692284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960692282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 960692285}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 164447858}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &960692285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960692282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6892981805954775373, guid: 4d4ff191d73c8b74699b854383c7fd25, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &960692286
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960692282}
+  m_CullTransparentMesh: 1
 --- !u!1 &974035168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,7 +3796,7 @@ GameObject:
   - component: {fileID: 974035171}
   - component: {fileID: 974035170}
   m_Layer: 5
-  m_Name: Estonia
+  m_Name: "Est\xF3nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3406,7 +3818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185.1, y: 0.000022888}
+  m_AnchoredPosition: {x: 171.5, y: 9.7}
   m_SizeDelta: {x: 30.428, y: 25.176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974035170
@@ -3421,15 +3833,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Estonia
+  CountryName: "Est\xF3nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &974035171
 MonoBehaviour:
@@ -3482,7 +3894,7 @@ GameObject:
   - component: {fileID: 985627356}
   - component: {fileID: 985627355}
   m_Layer: 5
-  m_Name: Belgium
+  m_Name: "B\xE9lgica"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3504,7 +3916,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -177.4, y: -185.1}
+  m_AnchoredPosition: {x: -183, y: -184.7}
   m_SizeDelta: {x: 18.034, y: 14.984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &985627355
@@ -3519,15 +3931,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Belgium
+  CountryName: "B\xE9lgica"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &985627356
 MonoBehaviour:
@@ -3691,7 +4103,7 @@ GameObject:
   - component: {fileID: 1046156804}
   - component: {fileID: 1046156803}
   m_Layer: 5
-  m_Name: Romania
+  m_Name: "Rom\xE9nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3728,14 +4140,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Romania
+  CountryName: "Rom\xE9nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &1046156804
@@ -3789,7 +4201,7 @@ GameObject:
   - component: {fileID: 1064247572}
   - component: {fileID: 1064247571}
   m_Layer: 5
-  m_Name: Czech
+  m_Name: "Ch\xE9quia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3826,7 +4238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Czech
+  CountryName: "Ch\xE9quia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
@@ -3874,6 +4286,213 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064247569}
   m_CullTransparentMesh: 1
+--- !u!1 &1115156076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115156077}
+  - component: {fileID: 1115156080}
+  - component: {fileID: 1115156079}
+  - component: {fileID: 1115156078}
+  m_Layer: 5
+  m_Name: Mute
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1115156077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115156076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 307218491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00041012, y: -733}
+  m_SizeDelta: {x: 1798.187, y: 527.302}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1115156078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115156076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1115156079}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 164447858}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: toggleMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1115156079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115156076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6163238125236399495, guid: 49963791af33fe2479434bc241d6ae3e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1115156080
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115156076}
+  m_CullTransparentMesh: 1
+--- !u!1 &1124398106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1124398107}
+  - component: {fileID: 1124398109}
+  - component: {fileID: 1124398108}
+  m_Layer: 0
+  m_Name: Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1124398107
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124398106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1945386879}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 572.91046, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1124398108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124398106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1124398109
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124398106}
+  m_CullTransparentMesh: 1
 --- !u!1 &1235205526
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,7 +4506,7 @@ GameObject:
   - component: {fileID: 1235205529}
   - component: {fileID: 1235205528}
   m_Layer: 5
-  m_Name: Serbia
+  m_Name: "S\xE9rvia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3909,7 +4528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.7, y: -289}
+  m_AnchoredPosition: {x: 152.98, y: -313.9}
   m_SizeDelta: {x: 23.85, y: 19.816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235205528
@@ -3924,7 +4543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Serbia
+  CountryName: "S\xE9rvia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
@@ -4004,13 +4623,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 829155031}
-  - {fileID: 753308940}
   m_Father: {fileID: 900406681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -60, y: -60}
+  m_AnchoredPosition: {x: -4.048004, y: -1.3499908}
+  m_SizeDelta: {x: -149.059, y: -51.903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1268866918
 MonoBehaviour:
@@ -4034,7 +4652,7 @@ MonoBehaviour:
   m_ScrollSensitivity: 5
   m_Viewport: {fileID: 829155031}
   m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 753308941}
+  m_VerticalScrollbar: {fileID: 0}
   m_HorizontalScrollbarVisibility: 2
   m_VerticalScrollbarVisibility: 2
   m_HorizontalScrollbarSpacing: -3
@@ -4055,15 +4673,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4338564409936619454, guid: c3cbd015370c5294385a8d880c234850, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -4432957505949057966, guid: 91a17b5ca0498d14abfd90c5bb9109bf, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4079,145 +4697,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268866916}
-  m_CullTransparentMesh: 1
---- !u!1 &1297669439
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1297669440}
-  - component: {fileID: 1297669442}
-  - component: {fileID: 1297669441}
-  m_Layer: 0
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1297669440
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297669439}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2109005890}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1297669441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297669439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Restart
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1297669442
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297669439}
   m_CullTransparentMesh: 1
 --- !u!1 &1305617096
 GameObject:
@@ -4261,6 +4740,7 @@ RectTransform:
   - {fileID: 1549622499}
   - {fileID: 1435862375}
   - {fileID: 1569259894}
+  - {fileID: 1354923210}
   - {fileID: 1555639747}
   - {fileID: 676602549}
   - {fileID: 1712177962}
@@ -4289,6 +4769,7 @@ RectTransform:
   - {fileID: 1594957951}
   - {fileID: 1459615222}
   - {fileID: 985627354}
+  - {fileID: 884862247}
   m_Father: {fileID: 787619605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4296,6 +4777,104 @@ RectTransform:
   m_AnchoredPosition: {x: -124.314964, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1354923209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1354923210}
+  - component: {fileID: 1354923213}
+  - component: {fileID: 1354923212}
+  - component: {fileID: 1354923211}
+  m_Layer: 5
+  m_Name: Montenegro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1354923210
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354923209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305617097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 120.8, y: -342.15}
+  m_SizeDelta: {x: 15.634, y: 12.989}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1354923211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354923209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  CountryName: Montenegro
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
+  hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
+  filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
+  colorLerpSpeed: 10
+  pulseAmount: 0.08
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
+  shrinkIntensity: 2
+--- !u!114 &1354923212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354923209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 234b8392a121f944583ffbf7786f3e08, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1354923213
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354923209}
+  m_CullTransparentMesh: 1
 --- !u!1 &1407383631
 GameObject:
   m_ObjectHideFlags: 0
@@ -4309,7 +4888,7 @@ GameObject:
   - component: {fileID: 1407383634}
   - component: {fileID: 1407383633}
   m_Layer: 5
-  m_Name: Ireland
+  m_Name: Irlanda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4346,15 +4925,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Ireland
+  CountryName: Irlanda
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1407383634
 MonoBehaviour:
@@ -4407,7 +4986,7 @@ GameObject:
   - component: {fileID: 1435862377}
   - component: {fileID: 1435862376}
   m_Layer: 5
-  m_Name: Slovenia
+  m_Name: "Eslov\xE9nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4444,15 +5023,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Slovenia
+  CountryName: "Eslov\xE9nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.2, y: 0.2}
+  maxLocalScale: {x: 0.2, y: 0.2}
+  minLocalScale: {x: 0.1, y: 0.1}
   shrinkIntensity: 2
 --- !u!114 &1435862377
 MonoBehaviour:
@@ -4603,7 +5182,7 @@ GameObject:
   - component: {fileID: 1459615224}
   - component: {fileID: 1459615223}
   m_Layer: 5
-  m_Name: Netherlands
+  m_Name: "Pa\xEDses Baixos"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4625,7 +5204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -153.3, y: -135.1}
+  m_AnchoredPosition: {x: -159.37, y: -135.1}
   m_SizeDelta: {x: 18.034, y: 14.984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459615223
@@ -4640,15 +5219,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Netherlands
+  CountryName: "Pa\xEDses Baixos"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1459615224
 MonoBehaviour:
@@ -4701,7 +5280,7 @@ GameObject:
   - component: {fileID: 1480772265}
   - component: {fileID: 1480772264}
   m_Layer: 5
-  m_Name: Bulgaria
+  m_Name: "Bulg\xE1ria"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4723,7 +5302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252.9, y: -344.69}
+  m_AnchoredPosition: {x: 260.7, y: -326.24}
   m_SizeDelta: {x: 21.87, y: 18.826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480772264
@@ -4738,15 +5317,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Bulgaria
+  CountryName: "Bulg\xE1ria"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1480772265
 MonoBehaviour:
@@ -4799,7 +5378,7 @@ GameObject:
   - component: {fileID: 1497585618}
   - component: {fileID: 1497585617}
   m_Layer: 5
-  m_Name: Finland
+  m_Name: "Finl\xE2ndia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4836,14 +5415,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Finland
+  CountryName: "Finl\xE2ndia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &1497585618
@@ -4972,7 +5551,7 @@ GameObject:
   - component: {fileID: 1541540000}
   - component: {fileID: 1541539999}
   m_Layer: 5
-  m_Name: Russia
+  m_Name: "R\xFAssia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5009,7 +5588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Russia
+  CountryName: "R\xFAssia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
@@ -5091,7 +5670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.4329987, y: -0.000015258789}
+  m_AnchoredPosition: {x: 2.4329987, y: -0.0002768522}
   m_SizeDelta: {x: -4.866, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1542084749
@@ -5147,7 +5726,7 @@ GameObject:
   - component: {fileID: 1549622501}
   - component: {fileID: 1549622500}
   m_Layer: 5
-  m_Name: Croatia
+  m_Name: "Cro\xE1cia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5184,15 +5763,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Croatia
+  CountryName: "Cro\xE1cia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1549622501
 MonoBehaviour:
@@ -5245,7 +5824,7 @@ GameObject:
   - component: {fileID: 1552457596}
   - component: {fileID: 1552457595}
   m_Layer: 5
-  m_Name: Moldova
+  m_Name: "Mold\xE1via"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5282,15 +5861,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Moldova
+  CountryName: "Mold\xE1via"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1552457596
 MonoBehaviour:
@@ -5343,7 +5922,7 @@ GameObject:
   - component: {fileID: 1555639749}
   - component: {fileID: 1555639748}
   m_Layer: 5
-  m_Name: Albania
+  m_Name: "Alb\xE2nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5380,15 +5959,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Albania
+  CountryName: "Alb\xE2nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1555639749
 MonoBehaviour:
@@ -5441,7 +6020,7 @@ GameObject:
   - component: {fileID: 1569259896}
   - component: {fileID: 1569259895}
   m_Layer: 5
-  m_Name: Bosnia
+  m_Name: "B\xF3snia e Herzegovina"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5463,7 +6042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 91.1, y: -328.1}
+  m_AnchoredPosition: {x: 82, y: -311.3}
   m_SizeDelta: {x: 23.85, y: 19.816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569259895
@@ -5478,15 +6057,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Bosnia
+  CountryName: "B\xF3snia e Herzegovina"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1569259896
 MonoBehaviour:
@@ -5539,7 +6118,7 @@ GameObject:
   - component: {fileID: 1594957953}
   - component: {fileID: 1594957952}
   m_Layer: 5
-  m_Name: Cyprus
+  m_Name: Chipre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5576,15 +6155,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Cyprus
+  CountryName: Chipre
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.2, y: 0.2}
+  maxLocalScale: {x: 0.2, y: 0.2}
+  minLocalScale: {x: 0.1, y: 0.1}
   shrinkIntensity: 2
 --- !u!114 &1594957953
 MonoBehaviour:
@@ -5637,7 +6216,7 @@ GameObject:
   - component: {fileID: 1712177964}
   - component: {fileID: 1712177963}
   m_Layer: 5
-  m_Name: Greece
+  m_Name: "Gr\xE9cia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5659,7 +6238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185.1, y: -401.1}
+  m_AnchoredPosition: {x: 197.65, y: -401.6}
   m_SizeDelta: {x: 21.87, y: 18.826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1712177963
@@ -5674,15 +6253,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Greece
+  CountryName: "Gr\xE9cia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1712177964
 MonoBehaviour:
@@ -5735,7 +6314,7 @@ GameObject:
   - component: {fileID: 1719682963}
   - component: {fileID: 1719682962}
   m_Layer: 5
-  m_Name: Germany
+  m_Name: Alemanha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5772,14 +6351,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Germany
+  CountryName: Alemanha
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &1719682963
@@ -5833,7 +6412,7 @@ GameObject:
   - component: {fileID: 1724626835}
   - component: {fileID: 1724626834}
   m_Layer: 5
-  m_Name: Poland
+  m_Name: "Pol\xF3nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5870,14 +6449,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Poland
+  CountryName: "Pol\xF3nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &1724626835
@@ -5974,9 +6553,9 @@ MonoBehaviour:
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1732406130
 MonoBehaviour:
@@ -6046,14 +6625,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 843679672}
-  - {fileID: 668000210}
+  - {fileID: 1945386879}
   m_Father: {fileID: 829155031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 2.4329834, y: -0.000015258789}
-  m_SizeDelta: {x: -4.866, y: 125.44}
+  m_SizeDelta: {x: -4.866, y: 130}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1740873745
 MonoBehaviour:
@@ -6108,7 +6686,7 @@ GameObject:
   - component: {fileID: 1764721286}
   - component: {fileID: 1764721285}
   m_Layer: 5
-  m_Name: France
+  m_Name: "Fran\xE7a"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6145,14 +6723,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: France
+  CountryName: "Fran\xE7a"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.5, y: 0.5}
+  maxLocalScale: {x: 0.5, y: 0.5}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &1764721286
@@ -6281,7 +6859,7 @@ GameObject:
   - component: {fileID: 1855470179}
   - component: {fileID: 1855470178}
   m_Layer: 5
-  m_Name: Lativa
+  m_Name: "Let\xF3nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6303,7 +6881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.38, y: -33.4}
+  m_AnchoredPosition: {x: 188.88, y: -28.3}
   m_SizeDelta: {x: 30.428, y: 25.176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855470178
@@ -6318,15 +6896,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Lativa
+  CountryName: "Let\xF3nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1855470179
 MonoBehaviour:
@@ -6379,7 +6957,7 @@ GameObject:
   - component: {fileID: 1856175348}
   - component: {fileID: 1856175347}
   m_Layer: 5
-  m_Name: Switzerland
+  m_Name: "Su\xED\xE7a"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6416,15 +6994,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Switzerland
+  CountryName: "Su\xED\xE7a"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1856175348
 MonoBehaviour:
@@ -6498,7 +7076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 310.21002, y: 48.00002}
+  m_AnchoredPosition: {x: 269, y: 107}
   m_SizeDelta: {x: 388.209, y: 205.635}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860768687
@@ -6524,14 +7102,14 @@ MonoBehaviour:
   m_text: 10/10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278254716
-  m_fontColor: {r: 0.4862745, g: 0.9882354, b: 0, a: 1}
+    rgba: 4283336371
+  m_fontColor: {r: 0.7019608, g: 0.5254902, b: 0.30588236, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6554,7 +7132,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6614,7 +7192,7 @@ GameObject:
   - component: {fileID: 1876799436}
   - component: {fileID: 1876799435}
   m_Layer: 5
-  m_Name: Iceland
+  m_Name: "Isl\xE2ndia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6651,15 +7229,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Iceland
+  CountryName: Irlanda
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
-  minLocalScale: {x: 0.3, y: 0.3}
+  targetLocalScale: {x: 0.3, y: 0.3}
+  maxLocalScale: {x: 0.3, y: 0.3}
+  minLocalScale: {x: 0.2, y: 0.2}
   shrinkIntensity: 2
 --- !u!114 &1876799436
 MonoBehaviour:
@@ -6699,7 +7277,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876799433}
   m_CullTransparentMesh: 1
---- !u!1 &1883634133
+--- !u!1 &1945386877
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6707,73 +7285,62 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1883634134}
-  - component: {fileID: 1883634136}
-  - component: {fileID: 1883634135}
+  - component: {fileID: 1945386879}
+  - component: {fileID: 1945386878}
   m_Layer: 0
-  m_Name: Handle
+  m_Name: TemplateResultItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1883634134
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883634133}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 569496931}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1883634135
+--- !u!114 &1945386878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883634133}
+  m_GameObject: {fileID: 1945386877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1883634136
-CanvasRenderer:
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 111.76
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!224 &1945386879
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883634133}
-  m_CullTransparentMesh: 1
+  m_GameObject: {fileID: 1945386877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 490372535}
+  - {fileID: 1124398107}
+  m_Father: {fileID: 1740873744}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 358.16748, y: -65}
+  m_SizeDelta: {x: 686.33496, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1967964441
 GameObject:
   m_ObjectHideFlags: 0
@@ -6809,8 +7376,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -836.6103, y: -3.2024}
-  m_SizeDelta: {x: 245, y: 1086.4}
+  m_AnchoredPosition: {x: -841.6742, y: -3.2024}
+  m_SizeDelta: {x: 255.119, y: 1086.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967964443
 MonoBehaviour:
@@ -6825,15 +7392,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4007112321258254791, guid: c3cbd015370c5294385a8d880c234850, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 4233604821611501464, guid: 4b6ade1a46d158e4bad99a28782be504, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6884,8 +7451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -365, y: 48}
-  m_SizeDelta: {x: 388.209, y: 205.635}
+  m_AnchoredPosition: {x: -213.15002, y: 107}
+  m_SizeDelta: {x: 422.011, y: 205.635}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024951586
 MonoBehaviour:
@@ -6907,17 +7474,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Flags
+  m_text: Bandeiras
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278254716
-  m_fontColor: {r: 0.4862745, g: 0.9882354, b: 0, a: 1}
+    rgba: 4283007925
+  m_fontColor: {r: 0.70980394, g: 0.5137255, b: 0.28627452, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6940,7 +7507,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -7069,7 +7636,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 409799399}
   m_HandleRect: {fileID: 409799398}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7095,8 +7662,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -568299405205186641, guid: df0a34697bfceef4c859d02fe7b0c144, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7126,7 +7693,7 @@ GameObject:
   - component: {fileID: 2057043870}
   - component: {fileID: 2057043869}
   m_Layer: 5
-  m_Name: UK
+  m_Name: Reino Unido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7163,14 +7730,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: UK
+  CountryName: Reino Unido
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.4, y: 0.4}
+  maxLocalScale: {x: 0.4, y: 0.4}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &2057043870
@@ -7224,7 +7791,7 @@ GameObject:
   - component: {fileID: 2101562568}
   - component: {fileID: 2101562567}
   m_Layer: 5
-  m_Name: Ukraine
+  m_Name: "Ucr\xE2nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7261,14 +7828,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce47c4d0a49428a408432152c448d4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
-  CountryName: Ukraine
+  CountryName: "Ucr\xE2nia"
   defaultColor: {r: 1, g: 1, b: 1, a: 0.3}
   hoverColor: {r: 0.5, g: 0.7, b: 1, a: 0.6}
   filledColor: {r: 0.4, g: 0.9, b: 0.6, a: 0.7}
   colorLerpSpeed: 10
   pulseAmount: 0.08
-  targetLocalScale: {x: 0.8, y: 0.8}
-  maxLocalScale: {x: 0.8, y: 0.8}
+  targetLocalScale: {x: 0.5, y: 0.5}
+  maxLocalScale: {x: 0.5, y: 0.5}
   minLocalScale: {x: 0.3, y: 0.3}
   shrinkIntensity: 2
 --- !u!114 &2101562568
@@ -7322,7 +7889,7 @@ GameObject:
   - component: {fileID: 2109005892}
   - component: {fileID: 2109005891}
   m_Layer: 0
-  m_Name: Button
+  m_Name: replay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7339,14 +7906,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1297669440}
+  m_Children: []
   m_Father: {fileID: 151216307}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 168.39685}
-  m_SizeDelta: {x: 160, y: 49.206}
+  m_AnchoredPosition: {x: 0.000033379, y: -276}
+  m_SizeDelta: {x: 445.366, y: 114.897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2109005891
 MonoBehaviour:
@@ -7424,7 +7990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bf625ae84f769384fb0cd1cc52d14971, type: 3}
+  m_Sprite: {fileID: 6866874826035338142, guid: b8d16527425a182429a876fb293c9ae6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7530,3 +8096,4 @@ SceneRoots:
   - {fileID: 2116548986}
   - {fileID: 164447856}
   - {fileID: 41927292}
+  - {fileID: 365980879}

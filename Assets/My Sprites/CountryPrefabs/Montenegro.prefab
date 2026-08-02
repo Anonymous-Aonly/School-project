@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragDrop
   canvas: {fileID: 0}
   CountryName: Montenegro
-  PinImage: {fileID: -3829177452669654662, guid: 9afcea5b108274b42a4f3e02f76152b9, type: 3}
+  PinImage: {fileID: 2575141407278891096, guid: feb6e2fc8e30d4c4c922d393c4d00a11, type: 3}
   FlagImage: {fileID: -4928301472002235191, guid: 39a42bb6e976d16438db21a1bdf94bdf, type: 3}
   snapDistance: 100
   slotOffset: {x: 30, y: -30}

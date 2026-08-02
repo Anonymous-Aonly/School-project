@@ -9,15 +9,25 @@ public class GameManager : MonoBehaviour
     public DragDrop[] FlagList;
     public GameObject Win;
     public GameObject Lose;
-    public GameObject TemplateCountryRightTxtGameObject;
-    public GameObject TemplateCountryWrongTxtGameObject;
+    public GameObject TemplateResultItemGameObject;
     public TextMeshProUGUI FlagScore;
+    
+    [Header("Buttons")]
+    public GameObject resultButton; // <-- DRAG YOUR RESULT BUTTON HERE
 
-    private List<DragDrop> validFlags;
+    [Header("Icons")]
+    [SerializeField] private Sprite tickSprite;
+    [SerializeField] private Sprite crossSprite;
 
+    [Header("Icon Settings")]
+    [SerializeField] private float iconWidth = 40f;
+    [SerializeField] private float iconHeight = 40f;
+
+    [Header("Cursor")]
     [SerializeField] private Sprite cursorSprite;
     [SerializeField] private Vector2 hotspot = Vector2.zero;
-    [SerializeField] private CursorMode cursorMode = CursorMode.Auto;
+
+    private List<DragDrop> validFlags;
 
     void Start()
     {
@@ -32,15 +42,19 @@ public class GameManager : MonoBehaviour
         // Empty
     }
 
-     public void Reload()
+    public void Reload()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void SubmitAnswers()
     {
-        // ✅ FOOLPROOF: Finds ALL DragDrop scripts in the scene, 
-        // regardless of whether they are in the scroll view, being dragged, or in a map slot!
+        // 1. INSTANTLY disable the button so it can't be clicked again
+        if (resultButton != null)
+        {
+            resultButton.SetActive(false);
+        }
+
         DragDrop[] allDragDrops = FindObjectsOfType<DragDrop>();
 
         if (allDragDrops.Length == 0)
@@ -49,9 +63,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        // Set our list to whatever was found
         FlagList = allDragDrops;
-
         validFlags = new List<DragDrop>();
         bool didWeWin = true;
 
@@ -78,40 +90,47 @@ public class GameManager : MonoBehaviour
 
         foreach (var item in FlagList)
         {
-            if (item.IsValid)
-            {
-                GameObject newGameObject = Instantiate(TemplateCountryRightTxtGameObject);
-                newGameObject.transform.SetParent(TemplateCountryRightTxtGameObject.transform.parent);
-                newGameObject.GetComponent<TextMeshProUGUI>().text = item.CountryName;
+            GameObject newItem = Instantiate(TemplateResultItemGameObject);
+            newItem.transform.SetParent(TemplateResultItemGameObject.transform.parent);
+            newItem.SetActive(true);
 
-                RectTransform rt = newGameObject.GetComponent<RectTransform>();
-                rt.anchorMin = new Vector2(0.5f, 0.5f);
-                rt.anchorMax = new Vector2(0.5f, 0.5f);
-                rt.pivot = new Vector2(0.5f, 0.5f);
-                rt.anchoredPosition = Vector2.zero;
-                rt.localRotation = Quaternion.identity;
-                rt.localScale = Vector3.one;
-                rt.sizeDelta = Vector2.zero;
-            }
-            else
+            // Find and update the country name text
+            TextMeshProUGUI[] textComponents = newItem.GetComponentsInChildren<TextMeshProUGUI>();
+            foreach (var txt in textComponents)
             {
-                GameObject newGameObject = Instantiate(TemplateCountryWrongTxtGameObject);
-                newGameObject.transform.SetParent(TemplateCountryWrongTxtGameObject.transform.parent);
-                newGameObject.GetComponent<TextMeshProUGUI>().text = item.CountryName;
-
-                RectTransform rt = newGameObject.GetComponent<RectTransform>();
-                rt.anchorMin = new Vector2(0.5f, 0.5f);
-                rt.anchorMax = new Vector2(0.5f, 0.5f);
-                rt.pivot = new Vector2(0.5f, 0.5f);
-                rt.anchoredPosition = Vector2.zero;
-                rt.localRotation = Quaternion.identity;
-                rt.localScale = Vector3.one;
-                rt.sizeDelta = Vector2.zero;
+                txt.text = item.CountryName;
             }
+
+            // Find and update the icon (tick or cross)
+            Image[] images = newItem.GetComponentsInChildren<Image>();
+            foreach (var img in images)
+            {
+                // Skip the template's own image if any, only target child icons
+                if (img.transform != newItem.transform)
+                {
+                    img.sprite = item.IsValid ? tickSprite : crossSprite;
+                    
+                    // Set icon size
+                    RectTransform iconRect = img.GetComponent<RectTransform>();
+                    if (iconRect != null)
+                    {
+                        iconRect.sizeDelta = new Vector2(iconWidth, iconHeight);
+                    }
+                }
+            }
+
+            // Reset RectTransform properly for vertical list
+            RectTransform rt = newItem.GetComponent<RectTransform>();
+            rt.anchorMin = new Vector2(0.5f, 0.5f);
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
+            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.anchoredPosition = Vector2.zero;
+            rt.localRotation = Quaternion.identity;
+            rt.localScale = Vector3.one;
+            rt.sizeDelta = Vector2.zero;
         }
 
-        TemplateCountryRightTxtGameObject.SetActive(false);
-        TemplateCountryWrongTxtGameObject.SetActive(false);
+        TemplateResultItemGameObject.SetActive(false);
         FlagScore.text = validFlags.Count + "/" + FlagList.Length;
     }
 

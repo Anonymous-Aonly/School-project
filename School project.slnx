@@ -1,5 +1,5 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Gentleland.SteampunkUI.DemoAndExample.csproj" />
-  <Project Path="Gentleland.Utils.SteampunkUI.csproj" />
+  <Project Path="Bezi.Editor.csproj" />
 </Solution>
